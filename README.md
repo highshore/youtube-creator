@@ -40,8 +40,7 @@ LangGraph 기반 멀티 에이전트 파이프라인을 FastAPI + Next.js 웹앱
 │   ├── components
 │   ├── lib
 │   └── package.json
-├── pyproject.toml
-└── .env.example
+└── pyproject.toml
 ```
 
 ## 1) Python 환경 (venv + uv)
@@ -55,9 +54,7 @@ source .venv/bin/activate
 
 ## 2) 환경 변수
 
-```bash
-cp .env.example .env
-```
+`.env.local` 또는 `frontend/.env.local`에 필요한 값을 직접 설정하세요.
 
 백엔드는 아래 순서로 환경파일을 자동 로드합니다.
 - `.env`
